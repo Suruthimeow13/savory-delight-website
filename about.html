@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Savory Delight</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Restaurant Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('simple') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About Us</a></li>
+                <li><a href="{{ url_for('menu') }}">Menu</a></li>
+                <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container-content">
+        <h2>Welcome to Savory Delight!</h2>
+        <p>At Savory Delight, we believe that every meal should be a celebration of flavors, aromas, and memories. Nestled in the heart of Chennai, our restaurant is a culinary haven where tradition meets innovation.</p>
+        
+        <h2>Our Story</h2>
+        <p>Savory Delight was founded with a passion for creating unforgettable dining experiences. Our journey began with a simple idea: to bring together the best of local and international cuisines in a warm and inviting atmosphere. Over the years, we have grown from a small eatery to a beloved dining destination, cherished by food enthusiasts and families alike.</p>
+        
+        <h2>Our Philosophy</h2>
+        <p style="text-align: left;">At Savory Delight, we are committed to:</p>
+        <ul>
+            <li><strong>Quality Ingredients</strong>: We source the freshest and finest ingredients to ensure that every dish is a masterpiece.</li>
+            <li><strong>Exceptional Service</strong>: Our team is dedicated to providing impeccable service, making sure that every guest feels special.</li>
+            <li><strong>Innovation and Tradition</strong>: Our menu is a harmonious blend of classic recipes and contemporary creations, offering something for every palate.</li>
+            <li><strong>Community Focus</strong>: We believe in giving back to the community that has supported us. We actively participate in local events and initiatives, striving to make a positive impact.</li>
+        </ul>
+        <h2> </h2>
+        <div class="gallerys">
+            <div class="interactive-image"></div>
+            <div class="interactive-image"></div>
+            <div class="interactive-image"></div>
+            <div class="interactive-image"></div>
+            <div class="interactive-image"></div>
+        </div>
+        <h2>Our Team</h2>
+        <p>Our talented chefs are the heart and soul of Savory Delight. With years of experience and a deep passion for culinary arts, they craft each dish with precision and creativity. Our friendly staff ensures that your dining experience is seamless and enjoyable, from the moment you walk through our doors to the time you leave.</p>
+        
+        <h2>The Ambiance</h2>
+        <p>Step into Savory Delight and be transported to a world of comfort and elegance. Our thoughtfully designed interiors, with pastel hues and a touch of rustic charm, create a cozy and welcoming environment. Whether you're here for a casual meal or a special celebration, our ambiance sets the perfect tone for every occasion.</p>
+        
+        <h2>Join Us</h2>
+        <p>We invite you to join us at Savory Delight, where every meal is a delightful adventure. Come savor the flavors, enjoy the warmth of our hospitality, and create beautiful memories with us. We look forward to serving you!</p>
+    </div>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    <footer>
+        <p>&copy; 2024 Savory Delight. All rights reserved.</p>
+    </footer>
+</body>
+</html>

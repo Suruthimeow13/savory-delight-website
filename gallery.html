@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Savory Delight</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Restaurant Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('simple') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About Us</a></li>
+                <li><a href="{{ url_for('menu') }}">Menu</a></li>
+                <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="gallery-section">
+        <h2>Our Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/Rogan Josh.jpeg') }}" alt="Delicious Dish 1">
+                <p>Exquisite Cuisine</p>
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/Wabi Sabi Restaurant_ Culinary Harmony in Imperfect Beauty - Quiet Minimal.jpeg') }}" alt="Delicious Dish 2">
+                <p>Beautiful Ambiance</p>
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/paneer.jpeg') }}" alt="Delicious Dish 3">
+                <p>Signature Dish</p>
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/download.jpeg') }}" alt="Delicious Dish 4">
+                <p>Memorable Events</p>
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/We love eating together.jpeg') }}" alt="Delicious Dish 5">
+                <p>Exclusive Offerings</p>
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/heart.jpeg') }}" alt="Delicious Dish 6">
+                <p>Delightful Atmosphere</p>
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/Chaat Masala Salad (gluten-free, oil-free, and nut-free!).jpeg') }}" alt="Delicious Dish 7">
+                <p>Fresh Ingredients</p>
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/chef.jpeg') }}" alt="Delicious Dish 8">
+                <p>Chef's Specialties</p>
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/40 Pack Black and Gold Round Plastic Dinnerware Value Set (20 Guests) - Royal.jpeg') }}" alt="Delicious Dish 9">
+                <p>Elegant Table Settings</p>
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/Comparing Restaurant.jpeg') }}" alt="Delicious Dish 10">
+                <p>Happy Customers</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Savory Delight. | All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

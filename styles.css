@@ -1,0 +1,549 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #740606;
+    color: white;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #8e0203;
+    border-radius: 5px;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-height: 100vh; /* Ensure slider height is full view height */
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: relative;
+    min-width: 100%;
+    box-sizing: border-box;
+    height: 100vh; /* Ensure each slide takes full view height */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire area of the slide */
+}
+
+.content {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+    margin-bottom: 20px
+}
+
+.content p {
+    font-size: 1rem;
+    margin-top: 20px;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+section#home {
+    padding: 20px;
+    background-color: #313c44;
+    color: white;
+    text-align: center;
+}
+section#home h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+section#home p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+.content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.specials-list {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 5px outset #dddddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    color: white;
+}
+.gallery{
+    display: flex;
+    gap: 1rem;
+    height: 400px;
+    width: 95%;
+}
+.gallery > div{
+    flex: 1;
+    transition: all 1s;
+}
+.gallery > div:nth-child(1){
+    background: url(/static/images/biriyani.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.gallery > div:nth-child(2){
+    background: url(/static/images/kofta.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.gallery > div:nth-child(3){
+    background: url(/static/images/Chicken\ Tikka\ Masala.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.gallery > div:nth-child(4){
+    background: url(/static/images/Rogan\ Josh.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.gallery > div:hover{
+    flex: 2;
+}
+.reservation-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: white;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #8e0203;
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #740606;
+}
+.time-table {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 18px;
+    text-align: left;
+}
+
+.time-table thead tr {
+    background-color: #740606;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.time-table th, .time-table td {
+    border: 1px solid #dddddd;
+    padding: 12px 15px;
+}
+
+.time-table tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+    color: #313c44;
+}
+.container-content{
+    padding: 20px;
+    background-color: #313c44;
+    color: white;
+}
+.container-content h2{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.container-content p{
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: center;
+}
+.container .content ul {
+    list-style-type: disc; /* Use discs for list items */
+    margin: 20px 0; /* Add some margin above and below the list */
+    padding-left: 20px; /* Add some padding to the left */
+    color: #313c44; /* Set the color of the list items */
+    font-size: 1em; /* Set the font size */
+}
+
+.container .content ul li {
+    margin-bottom: 10px; /* Add some space between list items */
+}
+
+.gallerys{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 400px;
+    width: 95%;
+}
+.gallerys > div{
+    flex: 1;
+    transition: all 1s;
+    border-radius: 5%;
+    justify-content: center;
+    align-items: center;
+}
+.gallerys > div:nth-child(1){
+    background: url(/static/images/dosa.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.gallerys > div:nth-child(2){
+    background: url(/static/images/Poori.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.gallerys > div:nth-child(3){
+    background: url(/static/images/paneer.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.gallerys > div:nth-child(4){
+    background: url(/static/images/biriyani2.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.gallerys > div:nth-child(5){
+    background: url(/static/images/chicken.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.interactive-image {
+    width: 200px;
+    height: 400px;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.interactive-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+footer {
+    background-color: #740606;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: static;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .menu-section {
+    padding: 50px 0;
+    background-color: #313c44; /* Light background for the menu section */
+    text-align: center;
+}
+
+.menu-section h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.menu-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu-gallery img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Gallery Section Styles */
+.gallery-section {
+    padding: 50px 0;
+    background-color: #313c44;
+    color: white;
+    text-align: center;
+}
+
+.gallery-section h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: white;
+}
+
+/* Gallery Grid Layout */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%; /* Make sure the items are responsive */
+    height: 250px; /* Set a fixed height for uniform image size */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+    border-radius: 10px;
+}
+
+.gallery-item p {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0;
+    transition: background 0.3s;
+}
+
+/* Hover Effects */
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item:hover p {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+/* Contact Section Styles */
+#contact-info {
+    padding: 20px;
+    background-color: #313c44; /* Light background for contact section */
+}
+
+#contact-info h2 {
+    font-size: 2em;
+    color: #ffffff; /* Primary color */
+    text-align: center;
+}
+
+.contact-details {
+    margin: 20px 0;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.1em;
+}
+/* Job Application Form Styles */
+.job-application {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1); /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 600px; /* Max width for form */
+    margin: 20px auto; /* Center the form */
+}
+
+.job-application h2 {
+    font-size: 2em;
+    color: #ffffff; /* Primary color */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.job-application p{
+    color: #ffffff;
+}
+
+.job-application-form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: none; /* Remove default border */
+    margin-bottom: 20px; /* Spacing between fieldsets */
+    padding: 0; /* Remove padding */
+}
+
+legend {
+    color: #ffffff;
+    font-weight: bold; /* Bold text for fieldset legends */
+    margin-bottom: 10px; /* Spacing below legend */
+}
+
+label {
+    margin-bottom: 5px; /* Spacing above labels */
+    font-weight: bold; /* Bold labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="file"],
+input[type="date"],
+select,
+textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding inside inputs */
+    margin-bottom: 15px; /* Spacing below inputs */
+    border: 1px solid #dddddd; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 1em; /* Font size for inputs */
+}
+
+input[type="file"] {
+    padding: 3px; /* Less padding for file input */
+    color: #ffffff;
+}
+
+button[type="submit"] {
+    background-color: #8e0203; /* Primary color */
+    color: #ffffff; /* White text */
+    border: none; /* No border */
+    padding: 10px; /* Padding inside button */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1.1em; /* Font size for button */
+}
+
+button[type="submit"]:hover {
+    background-color: #740606; /* Darker shade on hover */
+}
