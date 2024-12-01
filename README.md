@@ -14,8 +14,6 @@ Savory Delight
 │   ├── js/                 # JavaScript files
 ├── templates/              # HTML templates
 ├── app.py                  # Flask application entry point
-├── submit_reservation.php  # PHP file for handling reservations
-├── text.txt                # Sample text file
 ```
 
 ## 🚀 Features
